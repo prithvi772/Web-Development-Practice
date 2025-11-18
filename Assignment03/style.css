@@ -1,0 +1,31 @@
+h2 {
+  color: rgb(71, 98, 181);
+  text-align: center;
+}
+.cards {
+  width: 20%;
+  border: 2px solid rgb(153, 244, 254);
+  padding: 10px;
+  border-radius: 15px;
+  text-align: center;
+}
+.cards img {
+  width: 100%;
+  height: auto;
+  border-radius: 15px;
+}
+.cards p {
+  background-color: rgb(150, 150, 245);
+  border-radius: 10px;
+  text-align: justify;
+  padding: 10px;
+}
+h4{
+    color: rgb(228, 107, 228);
+}
+
+.container{
+    display: flex;
+    
+    justify-content: space-around;
+}

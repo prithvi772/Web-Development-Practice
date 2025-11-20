@@ -1,0 +1,12 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.myborder{
+    border:2px solid black;
+}
+/* .myb{
+    border:2px solid rgb(27, 113, 180);
+
+} */

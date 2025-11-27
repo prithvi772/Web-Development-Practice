@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let num=Number(window.prompt("Enter number to calculate Factors:"));
+        let count=0,html="";
+        for(let i=0;i<=num;i++){
+            if(num%i==0){
+                html+=i+" ";
+                count++;
+            }
+            
+        }
+        document.writeln(`There are ${count} factors of ${num}:`);   
+        document.write(html);
+        // document.write(i+ " ");
+
+        //10 
+        //i=1
+        //1<10 true
+        //10%1==0 yes print i
+        //2nd iteration
+        //i++ means i=2
+        //2<10 true
+        //10%2==0 yes print i
+        //3rd iteration
+        //i++ means i=3
+        //3<10 true
+        //10%3==0 NO So it will not get printed that's we are telling the
+        // condition as whether equals to zero or not.
+
+
+    </script>
+</body>
+</html>

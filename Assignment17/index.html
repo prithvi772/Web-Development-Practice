@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //First pattern
+      for (let j = 1; j < 5; j++) {
+        for (let i = 1; i <= 5; i++) {
+          document.writeln("*" + " ");
+        }
+        document.write("<br>");
+      }
+      document.write("-------------------------------");
+      document.write("<br>");
+
+      //Alternate method
+      // for(let j=1;j<=5;j++){
+      //   for(let i=5;i>=1;i--){
+      //     document.write('*'+" ");
+      //   }
+      //   document.write("<br>");
+      // }
+
+      // Second Pattern
+
+      for (let i = 1; i <= 5; i++) {
+        for (let j = 1; j <= i; j++) {
+          document.write("*" + " ");
+        }
+        document.write("<br>");
+      }
+      document.write("-------------------------------");
+      document.write("<br>");
+      //Alternate method
+      // for (let i = 1; i <=5; i++) {
+      //   let a = "";
+      //   for (let j = 1; j <= i; j++) {
+      //     a += j + " ";
+      //   }
+      //   console.log(a); // Print each row
+      // }
+
+      //Third pattern(reverese of the above )
+
+      for (let i = 5; i >= 1; i--) {
+        for (let j = 1; j <= i; j++) {
+          document.write("*" + " ");
+        }
+        document.write("<br>");
+      }
+
+      //Alternate method
+      document.write("-------------------------------");
+      document.write("<br>");
+      for (let i = 1; i <= 10; i++) {
+        for (let j = 10; j >= i; j--) {
+          document.write("*" + " ");
+        }
+        document.write("<br>");
+      }
+
+      //Fourth pattern
+      document.write("-------------------------------");
+      document.write("<br>");
+
+      for (let i = 1; i <= 5; i++) {
+        for (let j = 1; j <= i; j++) {
+          document.write(i + " ");
+        }
+        document.write("<br>");
+      }
+
+      //Fourth pattern(reverse of the above.)
+
+      document.write("-------------------------------");
+      document.write("<br>");
+
+      for (let i = 5; i >=1; i--) {
+        for (let j = 1; j<= i; j++) { 
+          document.write(i+" ");
+        }
+        document.write("<br>");
+      }
+    </script>
+  </body>
+</html>

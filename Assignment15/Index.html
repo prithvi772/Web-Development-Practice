@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let num=Number(window.prompt("Enter number:"));
+        let sum=0;
+        let rem=0;
+        let html="";
+        while(num>0){ 
+            rem=num%10;
+             
+            html=html+rem+" ";
+            sum=sum+rem;
+            num=Math.floor(num/10);
+            
+
+        }
+        document.write("The numbers from left to right are "+html+" ");
+        document.write("and sum is "+sum);
+    //1st iteration
+    //num=123
+    //0=123%10==3 so rem=3;
+    //sum=0+3; so sum=3;
+    //num/10==12
+
+    //2nd iteration
+    //3=12%10==2 so rem=2;
+    //sum(3)=3+2; so sum=5;
+    //num/10==1
+    </script>
+
+    
+</body>
+</html>

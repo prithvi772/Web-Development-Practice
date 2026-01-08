@@ -1,22 +1,24 @@
-This code contains a simple webpage built to practice and strengthen basic HTML and CSS concepts.
-It includes multiple sections describing popular places in Pune, styled using simple layout, spacing, and text formatting.
+📌 HTML & CSS Practice Assignment
+
+This project is a simple webpage created to practice basic HTML and CSS concepts.
+It showcases popular places in Pune using clean structure and simple styling.
 
 ✅ What I Practiced
 
-Structuring a webpage using HTML elements
+HTML structure (headings, paragraphs, divs)
 
-Using headings, paragraphs, and divisions
+Basic CSS (colors, spacing, flex, text styling)
 
-Applying basic CSS (colors, margins, padding, flex, text styling)
+Layout and formatting
 
-Improving understanding of layout and formatting
-
-Writing clean and readable code
+Writing clean, readable code
 
 📂 Files Included
 
 index.html — main webpage
 
-Inline CSS inside <style> for quick styling practice
+Inline CSS inside <style> for quick practice
 
-This assignment helps build a strong foundation for frontend development and prepares for more advanced HTML/CSS+React work.
+🔗 Live Demo: https://assignment01webdev.netlify.app
+
+This assignment builds a strong foundation for frontend development and prepares me for advanced HTML, CSS, and React work.

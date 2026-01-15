@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Array Analysis</title>
+
+    <style>
+      div,
+      h2 {
+        width: 80%;
+        margin: 10px auto;
+        color: yellow;
+        background-color: red;
+        padding: 5px;
+      }
+
+      h1 {
+        width: 80%;
+        margin: 10px auto;
+        color: red;
+      }
+      div {
+        background-color: cadetblue;
+        padding: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <script>
+      let a = [3, 10, 125, 120, 14, 15, 65, 63, 34, 80, 28, 5];
+      document.write("<h1>The given array is</h2>");
+      display(a);
+
+      //-------------------------------------------------------------------------------
+
+      document.write("<h1>Even Numbers are </h1>");
+      let fun1 = "<h2>";
+
+      for (let i = 0; i < a.length; i++) {
+        if (a[i] % 2 == 0) {
+          fun1 += `${a[i]} `;
+        }
+      }
+      fun1 += "</h2>";
+      document.writeln(fun1);
+
+      //------------------------------------------------------------------------------------
+
+      document.write("<h1>Numbers greater than 100 are  </h1>");
+
+      let fun2 = "<h2>";
+
+      for (let i = 0; i < a.length; i++) {
+        if (a[i] > 100) {
+          fun2 += `${a[i]} `;
+        }
+      }
+      fun2 += "</h2>";
+      document.writeln(fun2);
+
+      //-------------------------------------------------------------------------------
+
+      document.write("<h1>Numbers having 4 as last digit is/are  </h1>");
+
+      let fun3 = "<h2>";
+
+      for (let i = 0; i < a.length; i++) {
+        if (a[i] % 10 == 4) {
+          fun3 += `${a[i]} `;
+        }
+      }
+      fun3 += "</h2>";
+      document.writeln(fun3);
+
+      //-------------------------------------------------------------------------------
+
+      document.write("<h1>Each number is multiplied by 10  </h1>");
+
+      let fun4 = "<h2>";
+
+      for (let i = 0; i < a.length; i++) {
+        fun4 += `${a[i] * 10} `;
+      }
+      fun3 += "</h2>";
+      document.writeln(fun4);
+      //--------------------------------------------------------------------------------------
+      document.write("<h1>Number replaced by even/odd word  </h1>");
+      let fun5 = "<h2>";
+
+      for (let i = 0; i < a.length; i++) {
+        if (a[i] % 2 == 0) {
+          fun5 += `Even, `;
+        }
+        if (a[i] % 2 != 0) {
+          fun5 += `Odd, `;
+        }
+      }
+      fun5 += "</h2>";
+      document.writeln(fun5);
+
+      //--------------------------------------------------------------------------------------
+
+      function display(p) {
+        let html = "<h2>";
+        for (let i = 0; i < p.length; i++) {
+          html += p[i];
+          if (i < p.length - 1) {
+            html += ", ";
+          }
+        } //for
+        html += "</h2>";
+        document.write(html);
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Array Analysis</title>
+
+    <style>
+        body
+        {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: black;
+        }
+      div,
+      h2 {
+        width: 80%;
+        margin: 10px auto;
+        color: yellow;
+        background-color: burlywood;
+        padding: 5px;
+      }
+
+      h1 {
+        width: 80%;
+        margin: 10px auto;
+        color: yellow;
+      }
+      div {
+        background-color: cadetblue;
+        padding: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <script>
+      let a = [
+        "Mumbai",
+        "Nagpur",
+        "Pune",
+        "Ahilyanagar",
+        "Nanded",
+        "Nashik",
+        "Jalgaon",
+        "Sambhajinagar",
+      ];
+      document.write("<h1>The given array is</h2>");
+      display(a);
+
+//--------------------------------------------------------------------------------------
+
+      document.write("<h1>Names having length less than 7 are  </h2>");
+      let lenLessThanSeven = a.filter((element) => element.length < 7);
+      console.log(lenLessThanSeven);
+      display(lenLessThanSeven);
+
+      // let lenLessThanSeven = a.filter(()=>{
+        
+
+      // })
+        
+
+
+//--------------------------------------------------------------------------------------
+
+      document.write("<h1>Names having 'nagar' word are </h2>");
+      let containsNagar = a.filter((element)=>element.includes("nagar"));
+      display(containsNagar);
+
+//--------------------------------------------------------------------------------------
+      
+      document.write("<h1>Names which begin with n letter are </h2>");
+      let beginWithLetterN= a.filter((element)=>element.toLowerCase().startsWith('n'));
+      display(beginWithLetterN);
+        
+
+
+//--------------------------------------------------------------------------------------
+      
+      document.write("<h1>Each name is modified to capital letters  </h2>");
+       let allCapital = a.map((element)=>element.toUpperCase());
+       display(allCapital); 
+
+
+//--------------------------------------------------------------------------------------
+      
+	
+      function display(p) {
+        let html = "<h2>";
+        for (let i = 0; i < p.length; i++) {
+          html += p[i];
+          if (i < p.length - 1) {
+            html += ", ";
+          }
+        } //for
+        html += "</h2>";
+        document.write(html);
+      }
+    </script>
+  </body>
+</html>
